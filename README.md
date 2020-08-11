@@ -1,2 +1,2 @@
 # dsci-lab
-public introduction to the HAW LA dsci-lab
+public introduction to http://jbusse.de/dsci-lab/  
