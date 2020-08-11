@@ -1,0 +1,16 @@
+# Book settings
+title: IM 970 Data Science (EN)
+author: Johannes Busse
+logo: logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# You may also directly override the key-value pairs that Sphinx normally has you configure in conf.py. To do so, use the following section of _config.yml:
+
+sphinx:
+#    extra_extensions:
+#   - sphinx_tabs.tabs
+    config:
+#         html_theme: classic

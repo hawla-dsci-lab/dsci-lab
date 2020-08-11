@@ -1,0 +1,51 @@
+# use the dsci-lab
+
+This page: A short roundtrip how to use the dsci-lab
+
+## Update course material
+
+Open a terminal (e.g. with `Ctrl-Alt-t`). Navigate into our course directory:
+
+```sh
+cd ~/dsci/dsci-lab
+git pull
+```
+
+Note:
+* Of course you can type in above command. 
+* You also can copy this command from firefox (use `Strg-C`) and paste it into the terminal, here with `Strg-Shift-V`
+* Try also to hit the `Cursor-UP` key to select the command from the command-history.
+
+Get the latest version of our course material:
+
+```sh
+git pull
+```
+
+We have prepared this directory with information from where to pull additional data. 
+
+
+
+## Jupyter
+
+Some general introductions:
+* https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Notebook%20Basics.html
+* https://realpython.com/jupyter-notebook-introduction/
+* https://www.dataquest.io/blog/jupyter-notebook-tutorial/
+* youtube: https://www.youtube.com/watch?v=uFzrYiwnKEk
+
+How to start in the dsci-lab: 
+
+Open a terminal (e.g. with `Ctrl-Alt-t`) and start the server:
+
+```sh
+jupyter notebook &
+```
+
+Firefox will be launched automatically (if not already open), showing the jupyter notebook environment. 
+
+## Jupyterbook
+
+## git
+
+

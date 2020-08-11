@@ -1,0 +1,30 @@
+- file: index
+   
+- chapter: Subcourses
+  sections:
+   - file: dsci-pytrans
+   - file: sandbox
+   - file: dsci-lab
+   
+-  chapter: Kaggle Learn
+   sections:
+    - file: KaggleLearn/Python/Python
+    - file: KaggleLearn/Data_Visualization/DataVisualization
+    - file: KaggleLearn/Intro_to_Machine_Learning/IntroToMachineLearning
+    - file: KaggleLearn/Intermediate_Machine_Learning/IntermediateMachineLearning
+    - file: KaggleLearn/Pandas/pandas
+    - file: KaggleLearn/Feature_Engineering/FeatureEngineering
+#    - file: KaggleLearn/Machine_Learning_Explainability/MachineLearningExplainability
+#    - file: KaggleLearn/Natural_Language_Processing/NaturalLanguageProcessing
+
+#    - file: KaggleLearn/input/home-data-for-ml-course/readme
+
+-  chapter: Ressources
+   sections:
+   - file: KaggleLearn/datasets.md
+   - file: zreferences.md
+
+
+
+
+
