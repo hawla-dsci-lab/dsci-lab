@@ -1,0 +1,53 @@
+body {background:  url("http://www.jbusse.de/images/logo-gross.png")
+      no-repeat fixed center right  transparent; 
+      font-family: Candara,Helvetica,sans-serif }
+
+
+.topbar,
+.onthispage,
+.section-nav { border-left-style: none;
+	     background: transparent;}
+
+.section-nav,
+.onthispage,
+.main-content,
+.section-nav,
+.bd-toc,
+.bd-toc-nav,
+.nav,
+.toc-h1,
+.toc-h2,
+.toc-h3,
+.nav-item,
+.nav-link,
+.reference,
+.internal,
+.bd-topbar-whitespace,
+.col-12,
+.col-md-3,
+.container-xl,
+.flex-column,
+.section,
+.show,
+.sidebar,
+.site-navigation,
+.toc-entry,
+.tocsection,
+.topbar-main
+
+{
+#    background: #ffe;
+background: transparent;
+}
+
+#bd-toc-nav
+{
+#    background: #ffe;
+background: transparent;
+}
+
+
+main.bd-content #main-content h1, main.bd-content #main-content h2, main.bd-content #main-content h3, main.bd-content #main-content h4, main.bd-content #main-content h5 {
+    color:#bb1122; }
+  
+

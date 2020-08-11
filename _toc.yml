@@ -1,22 +1,15 @@
 #äöü
 - file: index
   sections:
+    - file: README
     - file: dsci-pytrans
     - file: dsci-lab
       sections:
-        - file: dsci-lab-getstarted.md
-        - file: dsci-lab-use.md
-        - file: dsci-lab-build.md
-    - file: KaggleLearn/Readme.md
-      sections:
-        - file: KaggleLearn/Python/Python
-        - file: KaggleLearn/Data_Visualization/DataVisualization
-        - file: KaggleLearn/Intro_to_Machine_Learning/IntroToMachineLearning
-        - file: KaggleLearn/Intermediate_Machine_Learning/IntermediateMachineLearning
-        - file: KaggleLearn/Pandas/pandas
-        - file: KaggleLearn/Feature_Engineering/FeatureEngineering
-#        - file: KaggleLearn/Machine_Learning_Explainability/MachineLearningExplainability
- #       - file: KaggleLearn/Natural_Language_Processing/NaturalLanguageProcessing
+        - file: dsci-lab-getstarted
+        - file: dsci-lab-use
+        - file: sandbox/hello
+        - file: dsci-lab-build
+    - file: KaggleLearn
     - file: dsci-theory
     - file: zreferences
 

@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Transition Course (EN) &#8212; IM 970 Data Science (EN)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jbusse.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/mystnb.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="dsci-lab (EN)" href="dsci-lab.html" />
+    <link rel="prev" title="README.md" href="README.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">IM 970 Data Science (EN)</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   IM 970 “Data Science” (WS 2020)
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   README.md
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Python Transition Course (EN)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsci-lab.html">
+   dsci-lab (EN)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="KaggleLearn.html">
+   Kaggle Learn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsci-theory.html">
+   dsci-theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zreferences.html">
+   References
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dsci-pytrans.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#programming-prerequisites">
+   Programming Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#curriculum">
+   Curriculum
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subject-1-operating-system">
+     Subject 1: Operating System
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subject-2-fundamental-python-for-java-c-programmers">
+     Subject 2: Fundamental Python for Java / C Programmers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subject-3-pythonic-python">
+     Subject 3: Pythonic Python
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exercises">
+   Exercises
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="python-transition-course-en">
+<h1>Python Transition Course (EN)<a class="headerlink" href="#python-transition-course-en" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>dsci … data science</p></li>
+<li><p>dsci-pytrans</p></li>
+</ul>
+<p>Context of the Data Science Python Transition Course (dsci-pytrans):</p>
+<ul class="simple">
+<li><p>Some basic programming prerequisites are already existent. We expect about 1 year (200h) of programming study time.</p></li>
+<li><p>dsci-pytrans refreshes these basic prerequisites based on Python, and also explains some typical pythonic elements which probably will be new for many students.</p></li>
+<li><p>dsci-pytrans is a nonobligatory strongly recommended precondition to enter the course dsci-main</p></li>
+</ul>
+<div class="section" id="programming-prerequisites">
+<h2>Programming Prerequisites<a class="headerlink" href="#programming-prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>We assume that you already have acquired basic programming skills and passed the courses with at least a mediocre (DE: Note ausreichend) result</p>
+<ul class="simple">
+<li><p>Informatik 1: 100 hours total studies of imperative programming with a language like Python, C, Java etc.</p>
+<ul>
+<li><p>variables, datatypes, control structures, functions, modules, I/O with text files, formtatted printing, string handling, basic type conversion</p></li>
+<li><p>be able to implement simple algorithms like bubble sort</p></li>
+</ul>
+</li>
+<li><p>Informatik 2: 100 hours total studies of OOP</p></li>
+</ul>
+<p>We assume your programming experience dates back up to 3 years, thus much of the content may be forgotten. However, there was a point in time where the main ideas of programming and some basic algorithms where understood. This basic understanding is an inevitalble prerequisite of our course.</p>
+<p>We offer a Python transition Course on the basis of Python to</p>
+<ul class="simple">
+<li><p>catch up forgotten (but already understood) basic programming skills</p></li>
+<li><p>migrate from other procedural languages (typically C or Java) to Python</p></li>
+</ul>
+<p>The course ends with a lightweight Python Transition exam, based on a set of short programming quests. The are available publicly, as it is also true for you curriculum. Experienced learners can teach and test themselfes completely self-paced. Other learners may want to interact with our course lecturer.</p>
+<p>The course is voluntary, nonobligatory. Passing the course is not a requirement to participate in the main course DSCI. However, the lecturer of the main course dsci will not provide support w.r.t. basic programming skills. Thus we strongly advice to take the transition course (and to take it  seriously).</p>
+</div>
+<div class="section" id="curriculum">
+<h2>Curriculum<a class="headerlink" href="#curriculum" title="Permalink to this headline">¶</a></h2>
+<p>The curriculum is contained in this little book:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/">https://jakevdp.github.io/WhirlwindTourOfPython/</a></p></li>
+<li><p>available on github as a set of ipynb: <a class="reference external" href="https://github.com/jakevdp/WhirlwindTourOfPython">https://github.com/jakevdp/WhirlwindTourOfPython</a></p></li>
+</ul>
+<div class="section" id="subject-1-operating-system">
+<h3>Subject 1: Operating System<a class="headerlink" href="#subject-1-operating-system" title="Permalink to this headline">¶</a></h3>
+<p>Objective:  Most students do have user-lever experience on Windows. However, in order to fully benefit from the jupyter ecosystem we need to work with a Linux (here: XUbuntu) Platform.</p>
+<p>Installing tools like Jupyter, Conda, Jupyterbook, LaTeX etc. on Ubuntu is simple - but configuring them to work together can be a challenge. Thus we provide a fully configurated virtual data science lab (an XUbuntu Oracle VirtualBox virtual machine) to the students.</p>
+<p>Operating System Subjects include:</p>
+<ul class="simple">
+<li><p>command line, bash etc.</p></li>
+<li><p>jupyter notebook: start, stop, access with firefox etc.</p></li>
+<li><p>where are your files? locate them in bash, in notebook</p></li>
+<li><p>We already have installed miniconda. Many libraries are missing: install them with conda and/or pip</p></li>
+</ul>
+<p>&#64;Marta: I will provide this machine til mid of August.</p>
+</div>
+<div class="section" id="subject-2-fundamental-python-for-java-c-programmers">
+<h3>Subject 2: Fundamental Python for Java / C Programmers<a class="headerlink" href="#subject-2-fundamental-python-for-java-c-programmers" title="Permalink to this headline">¶</a></h3>
+<p>Objective:</p>
+<ul class="simple">
+<li><p>Refresh fundamental programming concepts which are already known from lanuages like C, Java etc.</p></li>
+</ul>
+<p>Fundamental Python Subjects include (but are not restricted to)</p>
+<ul class="simple">
+<li><p>data types (numbers, strings, booleans)</p></li>
+<li><p>data structures, i.e. List, Dict, Set, String</p></li>
+<li><p>I/O from/to text file</p></li>
+<li><p>functions, variable scope</p></li>
+<li><p>modules</p></li>
+<li><p>foundational aspects of Python OOP</p></li>
+</ul>
+</div>
+<div class="section" id="subject-3-pythonic-python">
+<h3>Subject 3: Pythonic Python<a class="headerlink" href="#subject-3-pythonic-python" title="Permalink to this headline">¶</a></h3>
+<p>Objective:</p>
+<ul class="simple">
+<li><p>Get an introduction to specific “pythonic” elements, which make a difference w.r.t. C or Java: Do it the pythonic way!</p></li>
+</ul>
+<p>Pythonic Python Subjects include (but are not restricted to)</p>
+<ul class="simple">
+<li><p>list comprehension</p></li>
+<li><p>functions are first class objects</p></li>
+<li><p>lambdas, map</p></li>
+<li><p>dynamic typing, overloading, polymorphism</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h2>
+<p>Yes, a student has to <em>know</em> the subjects of the course. This means she can explain every single code snippet in the whirlwind book.</p>
+<p>But knowing isn’t enough. In the end a student has to <em>solve problems</em> with a computing language. Consequently a student has to be able to demonstrate practical programming skills to pass the course.</p>
+<p>We provide a bunch of micro challences in order to test practical programming skills and to allow for goal-oriented self-paced learning. Currently we explore several cloud platforms to reuse and/or to amend sets of Python micro challenges:</p>
+<p>platforms wich provide test facilities:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cocalc.com/">https://cocalc.com/</a></p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com">https://colab.research.google.com</a></p></li>
+<li><p><a class="reference external" href="https://py.checkio.org/">https://py.checkio.org/</a></p></li>
+</ul>
+<p>Gamification:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.codewars.com/">https://www.codewars.com/</a></p></li>
+<li><p><a class="reference external" href="https://www.battlecode.org/">https://www.battlecode.org/</a></p></li>
+<li><p><a class="reference external" href="https://codebattle.hexlet.io/">https://codebattle.hexlet.io/</a></p></li>
+<li><p><a class="reference external" href="https://codecombat.com/">https://codecombat.com/</a></p></li>
+</ul>
+<p>TBD (to be done): Are there enough and specific programming self test opportunities already aroud, or do we want to / have to provide additional own micro challenges?</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="README.html" title="previous page">README.md</a>
+    <a class='right-next' id="next-link" href="dsci-lab.html" title="next page">dsci-lab (EN)</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Johannes Busse<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>

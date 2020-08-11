@@ -1,0 +1,438 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>build the dsci-lab by yourself &#8212; IM 970 Data Science (EN)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jbusse.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/mystnb.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Kaggle Learn" href="KaggleLearn.html" />
+    <link rel="prev" title="Hello!" href="sandbox/hello.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">IM 970 Data Science (EN)</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   IM 970 “Data Science” (WS 2020)
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="README.html">
+   README.md
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsci-pytrans.html">
+   Python Transition Course (EN)
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="dsci-lab.html">
+   dsci-lab (EN)
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="dsci-lab-getstarted.html">
+     Get started
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="dsci-lab-use.html">
+     How to use the dsci-lab
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sandbox/hello.html">
+     Hello!
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     build the dsci-lab by yourself
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="KaggleLearn.html">
+   Kaggle Learn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dsci-theory.html">
+   dsci-theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="zreferences.html">
+   References
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/dsci-lab-build.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#download-an-iso-image">
+   Download an ISO image
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-basic-system">
+   Install Basic System
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#install-guest-extensions">
+   Install Guest Extensions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic-packages">
+   Basic Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-and-conda">
+   Jupyter and Conda
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-book">
+   jupyter-book
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="build-the-dsci-lab-by-yourself">
+<h1>build the dsci-lab by yourself<a class="headerlink" href="#build-the-dsci-lab-by-yourself" title="Permalink to this headline">¶</a></h1>
+<p>Note: You are <em>not</em> requested to build the dsci-lab by yourself. Instead you are advised to download the folly configured dsci-lab as a ready-to-use virtual machine.</p>
+<p>However, if you are a lecturer or a deeply interested student you might want to learn how we set up the dsci-lab. Here are the steps.</p>
+<div class="section" id="download-an-iso-image">
+<h2>Download an ISO image<a class="headerlink" href="#download-an-iso-image" title="Permalink to this headline">¶</a></h2>
+<p>Download an ISO image (ca. 1.55 GB) of the <em>LTS release: 20.04, Focal Fossa, 64-bit</em> of XUbuntu e.g. from  <a class="reference external" href="https://xubuntu.org/download/">https://xubuntu.org/download/</a> &gt; <a class="reference external" href="http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/20.04/release/">http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/20.04/release/</a> http://ftp.uni-kl.de/pub/linux/ubuntu-dvd/xubuntu/releases/20.04/release/xubuntu-20.04-desktop-amd64.iso : richt klick on file, “save as”, save to disk</p>
+</div>
+<div class="section" id="install-basic-system">
+<h2>Install Basic System<a class="headerlink" href="#install-basic-system" title="Permalink to this headline">¶</a></h2>
+<p>Start Oracle VM Virtual Box Manager.</p>
+<ul class="simple">
+<li><p>Maschine &gt; Neu &gt; Name: e.g. <em>xubuntu-august-2020</em>, Typ: Linux, Version: Ubuntu(64-bit</p></li>
+<li><p>Speichergröße: 1024 MB</p></li>
+<li><p>Platte: Festplatte erzeugen</p>
+<ul>
+<li><p>Dateityp der Festplatte: VDI</p></li>
+<li><p>Art der Speicherung: dynamisch alloziert</p></li>
+<li><p>Dateiname und Größe: hier mindestens 100 GB angeben &gt; Erzeugen</p></li>
+</ul>
+</li>
+</ul>
+<p>Start machine <em>xubuntu-august-2020</em>. A window will pop up: “Medium für Start auswählen”</p>
+<ul class="simple">
+<li><p>Medium hinzufügen &gt; locate <em>xubuntu-20.04-desktop-amd64.iso</em> on your disc (ca. 1.55 GB) &gt; Auswählen</p></li>
+<li><p>Starten</p></li>
+</ul>
+<p>VirtualBox will start the ISO image.</p>
+<ul class="simple">
+<li><p>Select language, e.g. “Deutsch”.</p></li>
+<li><p>Install XUbuntu</p></li>
+<li><p>Aktualisierungen herunterladen</p></li>
+<li><p>Installationsart: Festplatte löschen und installieren (this will clean only your newly allocated virtual hard disc, NOT the disk of your hos system); &gt; Installieren</p></li>
+<li><p>give Name, Username etc.. WRITE down your password on a secure location! e.g.</p>
+<ul>
+<li><p>Name: Data Scientist</p></li>
+<li><p>Name des Rechners: dsci-lab-august-2020</p></li>
+<li><p>Benutzername: ds</p></li>
+<li><p>password: datadata (this is an intitially very weak password, you MUST it change later!)</p></li>
+</ul>
+</li>
+</ul>
+<p>“Die Installation ist abgeschlossen. Sie müssen jetzt den Rechner neu starten, um das System zu benutzen” &gt; Jetzt neu starten</p>
+<ul class="simple">
+<li><p>“Remove installation medium”: (nothing to do), “press ENTER”: press Enter!</p></li>
+<li><p>log in with user <em>Data scientist</em>, password <em>datadata</em></p></li>
+</ul>
+<p>We will use the command line hereafter where possible. Get a new terminal by typing <code class="docutils literal notranslate"><span class="pre">Strg-Alt-t</span></code>.</p>
+<p>Update your installation</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt upgrade<span class="p">;</span> sudo apt update
+sudo reboot
+</pre></div>
+</div>
+<p>Manually type in (and don’t forget to add the ampersand “&amp;” at the end of the line):</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>firefox http://www.jbusse.de/dsci-lab/dsci-lab.html <span class="p">&amp;</span>
+</pre></div>
+</div>
+<p>If things worked well, Firefox will open this very page you are currently in your new linux machine. This allow you to copy &amp; paste the commands below to your terminal.</p>
+</div>
+<div class="section" id="install-guest-extensions">
+<h2>Install Guest Extensions<a class="headerlink" href="#install-guest-extensions" title="Permalink to this headline">¶</a></h2>
+<p>To prepare the installation of new kernel modules we need gcc:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install gcc make perl
+</pre></div>
+</div>
+<p>Oracle Virtual Box &gt; Geräte &gt; Gasterweiterungen einlegen: A window pops up, showing the directory <code class="docutils literal notranslate"><span class="pre">/media/data/VBox_GAs_6.1.6./</span></code> &gt; rightclick on background, “Terminal hier öffnen”,  a new terminal opens. Type in:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo ./VBoxLinuxAdditions.run
+</pre></div>
+</div>
+<p>Reboot the VM:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo reboot
+</pre></div>
+</div>
+<p>You now should be able to resize the VM window, activate bidirectional Copy &amp; Paste from Windows-Host to VB etc.</p>
+</div>
+<div class="section" id="basic-packages">
+<h2>Basic Packages<a class="headerlink" href="#basic-packages" title="Permalink to this headline">¶</a></h2>
+<p>At this stage you have a clean, brand new virtual XUbuntu machine, with VirtualBox Guest extensions enabled.</p>
+<p>To get our dsci-lab version you have to install some more packages.  You can do so by simply copying the following commands into a terminal (open a new terminal e.g. by typing <code class="docutils literal notranslate"><span class="pre">Strg-Alt-t</span></code>):</p>
+<p>Basic scientific writing general purpose packages</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install texlive-xetex fonts-freefont-otf latexmk
+</pre></div>
+</div>
+<p>Mindmap (incl. Java):</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install freeplane
+</pre></div>
+</div>
+<p>Add you favourite spartanic programming editor</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install emacs
+sudo apt install vim
+</pre></div>
+</div>
+</div>
+<div class="section" id="jupyter-and-conda">
+<h2>Jupyter and Conda<a class="headerlink" href="#jupyter-and-conda" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt install jupyter
+</pre></div>
+</div>
+<p>Conda:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> Downloads/
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+chmod +x ./Miniconda3-latest-Linux-x86_64.sh 
+./Miniconda3-latest-Linux-x86_64.sh 
+</pre></div>
+</div>
+<p>(Instead of installing miniconda you also might want to install <code class="docutils literal notranslate"><span class="pre">anaconda</span></code> (<a class="reference external" href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>). Anaconda is much more complete than miniconda, but INMHO fo “fat”.  In our dsci-lab we prefer a lightweight system. This allows you to look more easily “under the hood”, to understand what’s going on, and to maintain the whole system - the dependencies in our setup are complex enough anyhow.)</p>
+<p>After you have installed Conda, you have to close your terminal (<code class="docutils literal notranslate"><span class="pre">CTRL-D</span></code>) and open it (in fact a new terminal) again (e.g. with <code class="docutils literal notranslate"><span class="pre">Strg-Alt-t</span></code>). (Why close and open? In an earlier step you have installed <code class="docutils literal notranslate"><span class="pre">conda</span></code>. Conda puts an extra virtual environment layer over the standard Python installation, so we can work with multiple Python configurations in parallel. To learn more about conda virtual environments see <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-conda.html">https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-conda.html</a>)</p>
+<p>Your termial command line now should start with <code class="docutils literal notranslate"><span class="pre">(base)</span></code>, which is the name of your current virtual conda environment:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>(base) jb@jb-ThinkPad-X250:~$
+</pre></div>
+</div>
+<p>As said: Conda is minimalistic. Thus we have to install some modules by ourselfes. Some important ones are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="n">pandas</span> <span class="n">numpy</span> <span class="n">matplotlib</span> <span class="n">scikit</span><span class="o">-</span><span class="n">learn</span> <span class="n">seaborn</span> <span class="n">xgboost</span>
+</pre></div>
+</div>
+<p>Notes:</p>
+<ul class="simple">
+<li><p>We do install these packages into the virtual conda environment <code class="docutils literal notranslate"><span class="pre">base</span></code>. If we decide to create another virtual conda environment, it will be empty again, and we have to populate it with libraries again. This is the reason why we (a) prefer lightweight environments, and why we want to learn how to install libraries by ourselfes.</p></li>
+<li><p>We install Conda <em>not with sudo</em>, but as a normal user. Every user and every virtual conda environment are completely independent from each other. There is no system-wide installation.</p></li>
+</ul>
+</div>
+<div class="section" id="jupyter-book">
+<h2>jupyter-book<a class="headerlink" href="#jupyter-book" title="Permalink to this headline">¶</a></h2>
+<p>Jupyter-book v0.7 (<a class="reference external" href="https://jupyterbook.org/intro.html">https://jupyterbook.org/intro.html</a>) makes use of the highly sophisticated documentation tool Sphinx to create websites and (via LaTeX) a pdf-book out of a bunch of jupyter ntebooks.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install jupyter-book
+</pre></div>
+</div>
+<p>Test the installation: Build the book according to <a class="reference external" href="https://jupyterbook.org/start/build.html">https://jupyterbook.org/start/build.html</a></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mkdir <span class="nb">test</span>
+<span class="nb">cd</span> <span class="nb">test</span>
+jupyter-book create mybookname
+jupyter-book build mybookname
+jupyter-book build mybookname/ --builder pdflatex
+atril mybookname/_build/latex/book.pdf <span class="p">&amp;</span>
+<span class="nb">cd</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="sandbox/hello.html" title="previous page">Hello!</a>
+    <a class='right-next' id="next-link" href="KaggleLearn.html" title="next page">Kaggle Learn</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Johannes Busse<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
