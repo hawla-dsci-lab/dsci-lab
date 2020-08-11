@@ -2,30 +2,37 @@
 
 This page: A short guides roundtrip what you can expect from the dsci-lab
 
-## Update course material
 
-Make sure that you work with the latest version of this documentation.
 
-**Open a terminal:**
+## Update machine and course material
+
+**Make sure that you work with an up-to-date Linux.** Open a terminal:
 
 * hit `Ctrl-Alt-t`
 
-**Navigate into our course directory:**
+```sh
+sudo apt update; sudo apt upgrade
+```
+
+You have to confirm this comand by entering your password.
+
+**Make sure that you work with the latest version of this documentation.** Navigate into our course directory:
 
 ```sh
 cd ~/dsci/dsci-lab
 ```
 
-Note: Of course you can type in above command. You also can copy this command from firefox (use `Strg-C`) and paste it into the terminal (in the terminal use `Strg-Shift-V`). Try also to hit the `Cursor-UP` key to select the command from the command-history.
+Note: You can type in above command manually. You also want to try:
+  * Copy the command from firefox (use `Strg-C`) and paste it into the terminal (in the terminal use `Strg-Shift-V`). 
+  * Try also to hit the `Cursor-UP` key repeatedly to select the command from the command-history.
 
-
-**Pull the latest version of this site from github.com:**
+Pull the latest version of this site from github.com:
 
 ```sh
 git pull
 ```
- 
-Note: You don't have to secify the location where to pull the content from, because this information already is given in the file `.git/config` within the directory `~/dsci/dsci-lab`. And you don't have to give credentials, because this repository is public. 
+
+Note: You don't have to specify the location where to pull the content from, because this information already is given in the file `.git/config` within the directory `~/dsci/dsci-lab`. And you don't have to give credentials, because this repository is public on GitHub.
 
 
 ## Start jupyter

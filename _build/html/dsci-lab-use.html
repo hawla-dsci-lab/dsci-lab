@@ -204,8 +204,8 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#update-course-material">
-   Update course material
+  <a class="reference internal nav-link" href="#update-machine-and-course-material">
+   Update machine and course material
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -231,23 +231,30 @@
   <div class="section" id="how-to-use-the-dsci-lab">
 <h1>How to use the dsci-lab<a class="headerlink" href="#how-to-use-the-dsci-lab" title="Permalink to this headline">¶</a></h1>
 <p>This page: A short guides roundtrip what you can expect from the dsci-lab</p>
-<div class="section" id="update-course-material">
-<h2>Update course material<a class="headerlink" href="#update-course-material" title="Permalink to this headline">¶</a></h2>
-<p>Make sure that you work with the latest version of this documentation.</p>
-<p><strong>Open a terminal:</strong></p>
+<div class="section" id="update-machine-and-course-material">
+<h2>Update machine and course material<a class="headerlink" href="#update-machine-and-course-material" title="Permalink to this headline">¶</a></h2>
+<p><strong>Make sure that you work with an up-to-date Linux.</strong> Open a terminal:</p>
 <ul class="simple">
 <li><p>hit <code class="docutils literal notranslate"><span class="pre">Ctrl-Alt-t</span></code></p></li>
 </ul>
-<p><strong>Navigate into our course directory:</strong></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sudo apt update<span class="p">;</span> sudo apt upgrade
+</pre></div>
+</div>
+<p>You have to confirm this comand by entering your password.</p>
+<p><strong>Make sure that you work with the latest version of this documentation.</strong> Navigate into our course directory:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/dsci/dsci-lab
 </pre></div>
 </div>
-<p>Note: Of course you can type in above command. You also can copy this command from firefox (use <code class="docutils literal notranslate"><span class="pre">Strg-C</span></code>) and paste it into the terminal (in the terminal use <code class="docutils literal notranslate"><span class="pre">Strg-Shift-V</span></code>). Try also to hit the <code class="docutils literal notranslate"><span class="pre">Cursor-UP</span></code> key to select the command from the command-history.</p>
-<p><strong>Pull the latest version of this site from github.com:</strong></p>
+<p>Note: You can type in above command manually. You also want to try:</p>
+<ul class="simple">
+<li><p>Copy the command from firefox (use <code class="docutils literal notranslate"><span class="pre">Strg-C</span></code>) and paste it into the terminal (in the terminal use <code class="docutils literal notranslate"><span class="pre">Strg-Shift-V</span></code>).</p></li>
+<li><p>Try also to hit the <code class="docutils literal notranslate"><span class="pre">Cursor-UP</span></code> key repeatedly to select the command from the command-history.</p></li>
+</ul>
+<p>Pull the latest version of this site from github.com:</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git pull
 </pre></div>
 </div>
-<p>Note: You don’t have to secify the location where to pull the content from, because this information already is given in the file <code class="docutils literal notranslate"><span class="pre">.git/config</span></code> within the directory <code class="docutils literal notranslate"><span class="pre">~/dsci/dsci-lab</span></code>. And you don’t have to give credentials, because this repository is public.</p>
+<p>Note: You don’t have to specify the location where to pull the content from, because this information already is given in the file <code class="docutils literal notranslate"><span class="pre">.git/config</span></code> within the directory <code class="docutils literal notranslate"><span class="pre">~/dsci/dsci-lab</span></code>. And you don’t have to give credentials, because this repository is public on GitHub.</p>
 </div>
 <div class="section" id="start-jupyter">
 <h2>Start jupyter<a class="headerlink" href="#start-jupyter" title="Permalink to this headline">¶</a></h2>

@@ -208,16 +208,6 @@
    Create Virtual Machine
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#run-the-dsci-lab">
-   Run the dsci-lab
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#import-ova-file">
-   Import OVA-file
-  </a>
- </li>
 </ul>
 
         </nav>
@@ -238,14 +228,18 @@
 </ul>
 <div class="section" id="create-virtual-machine">
 <span id="start-with-vdi-file"></span><h2>Create Virtual Machine<a class="headerlink" href="#create-virtual-machine" title="Permalink to this headline">¶</a></h2>
-<p>Download the zipped VDI-file from here to your local disc:</p>
+<p>Download the zipped VDI-file from here to your local disc  (get download-credentials from Johannes):</p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://www.jbusse.de/vm/xubuntu-august-2020.zip">http://www.jbusse.de/vm/xubuntu-august-2020.zip</a> (get download-credentials from Johannes)</p>
+<li><p><a class="reference external" href="http://www.jbusse.de/vm/xubuntu-august-2020.zip">http://www.jbusse.de/vm/xubuntu-august-2020.zip</a></p>
 <ul>
+<li><p>Version 2020-08-11 T 1640</p></li>
+<li><p>Size: 5.6 GB (6.009.102.301 Bytes)</p></li>
 <li><p>XUbuntu 64-bit, built in August 2020, guest extensions 6.1.12 installed</p></li>
 <li><p>XUbunu-user: “data / Data Scientist”, password: datadata</p></li>
 </ul>
 </li>
+<li><p>older versions:
+http://www.jbusse.de/vm/xubuntu-august-2020.zip (version 2020-08-10)</p></li>
 </ul>
 <p>Unzip the file. You should get the file <code class="docutils literal notranslate"><span class="pre">xubuntu-august-2020.vdi</span></code> (about 16GB).</p>
 <p>Start VirtualBox. In VirtualBox create a new virtual machine, and import the VDI- or VMDK-file from above. Steps:</p>
@@ -267,43 +261,18 @@
 <li><p>click to the icon right of the dropdown menue. Add vdi-file from disc.</p></li>
 </ul>
 </li>
+<li><p>IMPORTANT: In the <strong>network-section</strong> select <strong>Reinitialize the MAC address of all network cards</strong></p></li>
 <li><p>OK!</p></li>
 </ul>
 </li>
 </ul>
-<p>IMPORTANT: In the network-section look for an option <strong>Reinitialize the MAC address of all network cards</strong> and set it to <em>yes</em>.</p>
-</div>
-<div class="section" id="run-the-dsci-lab">
-<h2>Run the dsci-lab<a class="headerlink" href="#run-the-dsci-lab" title="Permalink to this headline">¶</a></h2>
 <p>Start the virtual machine. Login into XUbuntu with</p>
 <ul class="simple">
-<li><p>user <em>data (full name: “Data Scientist”)</em></p></li>
-<li><p>password <em>datadata</em>.</p></li>
+<li><p>user: <em>data</em> / full name <em>Data Scientist</em></p></li>
+<li><p>password: <em>datadata</em></p></li>
 </ul>
-<p>Start firefox. You should be able to browse the internet.</p>
-</div>
-<div class="section" id="import-ova-file">
-<h2>Import OVA-file<a class="headerlink" href="#import-ova-file" title="Permalink to this headline">¶</a></h2>
-<p>DEPRECATED, proceed according too <a class="reference internal" href="#start-with-vdi-file"><span class="std std-ref">Create Virtual Machine</span></a> .</p>
-<p>Download our dsci-lab (given as an OVA file)</p>
-<ul class="simple">
-<li><p>IMPORTANT: DO NOT double-click this link; instead simply right-click the link and save the OVA-file to your disk.</p></li>
-<li><p>IMPORTANT: DO NOT interpret the OVA-file e.g. as a zip file (which it is in fact), DO NOT extract something from this file! Simply save this file to your disk.</p></li>
-<li><p>source:</p>
-<ul>
-<li><p>get user and password from Johannes Busse</p></li>
-<li><p>http://www.jbusse.de/vm/xubuntu-august-2020.ova (August 2020: <em>“E_INVALIDARG (0x80070057)”</em>, take path <a class="reference internal" href="#start-with-vdi-file"><span class="std std-ref">Create Virtual Machine</span></a> instead)</p></li>
-</ul>
-</li>
-</ul>
-<p>Import the OVA into VirtualBox:</p>
-<ul class="simple">
-<li><p>Datei &gt; Appliance importieren</p></li>
-<li><p>locate OVA-file on your disc</p></li>
-<li><p>Applianance-Einstellungen &gt; MAC-Adressen-Richtlinie: Neue MAC-Adressen für alle Netzwerkadapter generieren / Reinitialize the MAC address of all network cards IMPORTANT</p></li>
-<li><p>Importieren</p></li>
-</ul>
-<p>NOTE: Some users get an error while importing the OVA-file: <em>E_INVALIDARG (0x80070057)</em>. We do know this error, bu we can’t reproduce it by ourselfes. A workaround might be to import the VDI-file, see above.</p>
+<p>Start firefox (“Internetnavigator”). You should be able to browse the internet.</p>
+<p>Proceed with next section: <a class="reference internal" href="dsci-lab-use.html"><span class="doc">How to use the dsci-lab</span></a>.</p>
 </div>
 </div>
 
