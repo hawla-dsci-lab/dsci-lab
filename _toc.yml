@@ -3,6 +3,8 @@
   sections:
     - file: README
     - file: dsci-pytrans
+      sections:
+        - file: email-2020-08-14
     - file: dsci-lab
       sections:
         - file: dsci-lab-getstarted

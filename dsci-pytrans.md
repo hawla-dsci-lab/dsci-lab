@@ -1,8 +1,5 @@
 # Python Transition Course (EN)
-
-* dsci ... data science
-* dsci-pytrans 
-
+user: dsci,  pass: W1ssenschaft (beachte die Ziffer "1" statt Buchstabe "i")
 Context of the Data Science Python Transition Course (dsci-pytrans):
 * Some basic programming prerequisites are already existent. We expect about 1 year (200h) of programming study time.
 * dsci-pytrans refreshes these basic prerequisites based on Python, and also explains some typical pythonic elements which probably will be new for many students.
@@ -34,7 +31,7 @@ The curriculum is contained in this little book:
 * available on github as a set of ipynb: <https://github.com/jakevdp/WhirlwindTourOfPython>
 
 
-### Subject 1: Operating System
+### Subject 1: Linux Command Line
 
 Objective:  Most students do have user-lever experience on Windows. However, in order to fully benefit from the jupyter ecosystem we need to work with a Linux (here: XUbuntu) Platform. 
 
@@ -42,12 +39,10 @@ Installing tools like Jupyter, Conda, Jupyterbook, LaTeX etc. on Ubuntu is simpl
 
 Operating System Subjects include:
 
-* command line, bash etc.
+* command line, bash essentials etc.
 * jupyter notebook: start, stop, access with firefox etc.
 * where are your files? locate them in bash, in notebook
 * We already have installed miniconda. Many libraries are missing: install them with conda and/or pip
-
-@Marta: I will provide this machine til mid of August.
 
 
 ### Subject 2: Fundamental Python for Java / C Programmers
@@ -56,24 +51,14 @@ Objective:
 * Refresh fundamental programming concepts which are already known from lanuages like C, Java etc. 
 
 Fundamental Python Subjects include (but are not restricted to)
-* data types (numbers, strings, booleans)
-* data structures, i.e. List, Dict, Set, String
-* I/O from/to text file
-* functions, variable scope
-* modules
-* foundational aspects of Python OOP
 
-### Subject 3: Pythonic Python
-
-Objective: 
-* Get an introduction to specific "pythonic" elements, which make a difference w.r.t. C or Java: Do it the pythonic way!
-
-Pythonic Python Subjects include (but are not restricted to)
-* list comprehension
-* functions are first class objects
-* lambdas, map
-* dynamic typing, overloading, polymorphism
-
+* Data types
+* List, Dictionary (not only) Comprehensions, lambda, map, reduce, filter
+* Collection Data types
+* Control Structures and Functions
+* Modules and packages
+* File management, input, output
+* Object Oriented Programming
 
 
 ## Exercises

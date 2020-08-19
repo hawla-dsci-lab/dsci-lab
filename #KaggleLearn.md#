@@ -66,3 +66,6 @@ All notebooks of Kaggle Learn have been published under the  Apache 2.0 open sou
 
 
 We advice to get a kaggle account in order to go through the course material. 
+
+
+
