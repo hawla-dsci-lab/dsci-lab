@@ -1,5 +1,5 @@
 # Python Transition Course (EN)
-user: dsci,  pass: W1ssenschaft (beachte die Ziffer "1" statt Buchstabe "i")
+
 Context of the Data Science Python Transition Course (dsci-pytrans):
 * Some basic programming prerequisites are already existent. We expect about 1 year (200h) of programming study time.
 * dsci-pytrans refreshes these basic prerequisites based on Python, and also explains some typical pythonic elements which probably will be new for many students.

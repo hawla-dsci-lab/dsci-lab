@@ -13,7 +13,6 @@ This page: A short guides roundtrip what you can expect from the dsci-lab
 ```sh
 sudo apt update; sudo apt upgrade
 ```
-
 You have to confirm this comand by entering your password.
 
 **Make sure that you work with the latest version of this documentation.** Navigate into our course directory:

@@ -150,12 +150,12 @@ conda update conda
 
 Install jupytext:
 ```sh
-conda install -c conda-forge jupytext
 ```
 
 ## Zotero
 
 Download Zotero from <https://www.zotero.org/download/> to `/home/data/Downloads/`
+
 
 Install Zotero:
 
@@ -165,7 +165,6 @@ bunzip2 Zotero-5.0.89_linux-x86_64.tar.bz2
 tar -xvf Zotero-5.0.89_linux-x86_64.tar
 mv Zotero_linux-x86_64/ ../Zotero
 ```
-Also do install the Zotero Firefox Connector.
 
 Launch Zotero the first time:
 
@@ -173,27 +172,7 @@ Launch Zotero the first time:
 ~/Zotero_linux-x86_64/zotero &
 ```
 
-Enhance Zotero with <https://retorque.re/zotero-better-bibtex/>: Follow the installation instructions from <https://retorque.re/zotero-better-bibtex/installation/>:
-* Save file `zotero-better-bibtex-5.2.72.xpi` to `Downloads` ...
-* an import this file into Zotero
-
-Zotero wants you to restart Zotero several times: do it. You will find that Zotero has allocated the new directory `~/Zotero`: Include this directory to your list of directories which are backuped daily ;-)
-
-Zotero allows you to link to your own files within your base (i.e. home) directory. Allocate a directory where you would like to store literature you download from the web. Johannes e.g. uses this location: 
-
-```sh
-/home/data/a/l2/linked_zotero_files
-```
-
-(`/home/data/a/l2` is a location which gets a weekly backup, as opposed e.g. to `/home/data/a/l`, which holds self made data and thus gets backups on a daily basis).
-
-Tell the location of this folder to Zotero:
-* Zotero > Erweitert > Dateien und Ordner > Basisverzeichnis für verknüpfte Dateianhänge > Auswählen > `/home/data/a/l2/linked_zotero_files`
-
-(Hint: Due to a Zotero bug this directory must not start with the string "zotero").
-
-
-
+Enhance Zotero with <https://retorque.re/zotero-better-bibtex/>: Follow the installation instructions from <https://retorque.re/zotero-better-bibtex/installation/>.
 
 
 

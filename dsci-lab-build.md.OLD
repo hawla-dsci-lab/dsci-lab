@@ -51,7 +51,7 @@ sudo reboot
 Manually type in (and don't forget to add the ampersand "&" at the end of the line):
 
 ```sh
-firefox http://www.jbusse.de/dsci-lab/dsci-lab.html &
+firefox http://www.jbusse.de/dsci-lab/dsci-lab-build.html &
 ```
 	
 If things worked well, Firefox will open this very page you are currently in your new linux machine. This allow you to copy & paste the commands below to your terminal.
@@ -133,71 +133,14 @@ Your termial command line now should start with `(base)`, which is the name of y
 
 As said: Conda is minimalistic. Thus we have to install some modules by ourselfes. Some important ones are:
 
-```sh
+```
 conda install pandas numpy matplotlib scikit-learn seaborn xgboost
 ```
 
 Notes:
 
-* We do install these packages into the virtual conda environment `base`. If we decide to create another virtual conda environment, it will be empty again, and we have to populate it with libraries again. This is the reason (a) why we prefer lightweight environments, and (b) why we want to learn how to install libraries by ourselfes.
+* We do install these packages into the virtual conda environment `base`. If we decide to create another virtual conda environment, it will be empty again, and we have to populate it with libraries again. This is the reason why we (a) prefer lightweight environments, and why we want to learn how to install libraries by ourselfes.
 * We install Conda *not with sudo*, but as a normal user. Every user and every virtual conda environment are completely independent from each other. There is no system-wide installation.
-
-Keep `conda` current:
-
-```sh
-conda update conda
-```
-
-Install jupytext:
-```sh
-conda install -c conda-forge jupytext
-```
-
-## Zotero
-
-Download Zotero from <https://www.zotero.org/download/> to `/home/data/Downloads/`
-
-Install Zotero:
-
-```sh
-cd Downloads
-bunzip2 Zotero-5.0.89_linux-x86_64.tar.bz2
-tar -xvf Zotero-5.0.89_linux-x86_64.tar
-mv Zotero_linux-x86_64/ ../Zotero
-```
-Also do install the Zotero Firefox Connector.
-
-Launch Zotero the first time:
-
-```sh
-~/Zotero_linux-x86_64/zotero &
-```
-
-Enhance Zotero with <https://retorque.re/zotero-better-bibtex/>: Follow the installation instructions from <https://retorque.re/zotero-better-bibtex/installation/>:
-* Save file `zotero-better-bibtex-5.2.72.xpi` to `Downloads` ...
-* an import this file into Zotero
-
-Zotero wants you to restart Zotero several times: do it. You will find that Zotero has allocated the new directory `~/Zotero`: Include this directory to your list of directories which are backuped daily ;-)
-
-Zotero allows you to link to your own files within your base (i.e. home) directory. Allocate a directory where you would like to store literature you download from the web. Johannes e.g. uses this location: 
-
-```sh
-/home/data/a/l2/linked_zotero_files
-```
-
-(`/home/data/a/l2` is a location which gets a weekly backup, as opposed e.g. to `/home/data/a/l`, which holds self made data and thus gets backups on a daily basis).
-
-Tell the location of this folder to Zotero:
-* Zotero > Erweitert > Dateien und Ordner > Basisverzeichnis für verknüpfte Dateianhänge > Auswählen > `/home/data/a/l2/linked_zotero_files`
-
-(Hint: Due to a Zotero bug this directory must not start with the string "zotero").
-
-
-
-
-
-
-
 
 ## jupyter-book
 

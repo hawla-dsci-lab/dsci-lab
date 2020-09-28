@@ -1,6 +1,9 @@
 #äöü
 - file: index
   sections:
+    - file: dsci-im870
+      sections:
+        - file: dsci-2020-10-02
     - file: README
     - file: dsci-pytrans
       sections:
@@ -9,9 +12,16 @@
       sections:
         - file: dsci-lab-getstarted
         - file: dsci-lab-use
+        - file: dsci-lab-github
         - file: sandbox/hello
         - file: dsci-lab-build
+        - file: dsci-zotero-use
     - file: KaggleLearn
+    - file: dsci-projekte
+      sections:
+        - file: dsci-play-python
+        - file: dsci-ontologie-visualisierung
+        - file: dsci-projekt(DE)
     - file: dsci-theory
     - file: zreferences
 

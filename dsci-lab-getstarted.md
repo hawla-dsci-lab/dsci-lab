@@ -1,8 +1,9 @@
-# Get started
+# Get started: get the dsci-lab
 
 Download Oracle VM VirtualBox from here:
-* <https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html>. 
-* Install the software. 
+* <https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html>
+   * 2020-09-28: Version 6.1.14
+* Install the software into your host operating system.
 * Again go to the download-page and get the *Oracle VM VirtualBox Extension Pack* (all platforms).
 
 (start-with-vdi-file)=
@@ -12,7 +13,9 @@ Download the zipped VDI-file from here to your local disc  (get download-credent
   * <http://www.jbusse.de/vm/xubuntu-august-2020.zip>
      * Version 2020-08-11 T 1640
      * Size: 5.6 GB (6.009.102.301 Bytes)
-     * XUbuntu 64-bit, built in August 2020, guest extensions 6.1.12 installed
+%     * XUbuntu 64-bit, built in August 2020, guest extensions 6.1.12 installed
+     * XUbuntu 20.04.1 LTS, 64-bit, last update 2020-09-28
+     * guest extensions 6.1.14 installed
 	 * XUbunu-user: "data / Data Scientist", password: datadata
   * older versions:
         http://www.jbusse.de/vm/xubuntu-august-2020.zip (version 2020-08-10)
