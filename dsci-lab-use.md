@@ -91,6 +91,13 @@ To re-build this documentation with your last edits run `jupyter-book`:
 jupyter-book build .
 ```
 
+Sometimes - but not always - Students report an Error:  `Exception occurred ... fileExistsError [Errno 17]: File exists: ...`. Solution: Delete the directory `_build`, e.g.:
+
+```sh
+rm -rf _build
+```
+
+
 ```{figure} images/jupyter-book_build_dot.png
 ```
 

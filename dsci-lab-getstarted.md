@@ -9,23 +9,37 @@ Download Oracle VM VirtualBox from here:
 (start-with-vdi-file)=
 ## Create Virtual Machine
 
-Download the zipped VDI-file from here to your local disc  (get download-credentials from Johannes):
-  * <http://www.jbusse.de/vm/xubuntu-august-2020.zip>
-     * Version 2020-08-11 T 1640
-     * Size: 5.6 GB (6.009.102.301 Bytes)
-%     * XUbuntu 64-bit, built in August 2020, guest extensions 6.1.12 installed
-     * XUbuntu 20.04.1 LTS, 64-bit, last update 2020-09-28
-     * guest extensions 6.1.14 installed
-	 * XUbunu-user: "data / Data Scientist", password: datadata
-  * older versions:
-        http://www.jbusse.de/vm/xubuntu-august-2020.zip (version 2020-08-10)
+This is what you will get:
+ * XUbuntu 20.04.1 LTS, 64-bit, last update 2020-09-28
+ * guest extensions 6.1.14 installed
+ * XUbunu-user: "data / Data Scientist", password: datadata
 
-Unzip the file. You should get the file `xubuntu-august-2020.vdi` (about 16GB). 
+Get an overview what there is to be done:
+* watch youtube: [VirtualBox Tutorial 14 - How to import a vdi image into VirtualBox](https://www.youtube.com/watch?v=fVYwt1Tluug)
+   * stop video at 0:20, "Identify the *default machine folder*, that the Oracle VirtualBox Manager uses"
+   * identify this folder on your computer!
+   * continue video ... ;-)
+* read <https://techathlon.com/how-to-run-a-vmdk-file-in-oracle-virtualbox/>
 
-Start VirtualBox. In VirtualBox create a new virtual machine, and import the VDI- or VMDK-file from above. Steps:
+Download the zipped VDI-file from here to your local disc - ideally directly to your  *default machine folder*
+* Warning: Never double click to this file in the following steps. Use right click instead!
+* Source: <http://www.jbusse.de/vm/xubuntu-august-2020.zip>  
+   * use right click to download file. (Don't try something else. I.e. never allow Windows to open this file.)
+   * user: dsci, pass: (get password from Johannes)
+   * size zipped: ca 7 GB
+ * unzip the file, ideally into / within yor   *default machine folder*
+   * again: Do not double click, use right click instead.
+   * You should get the file `xubuntu-august-2020.vdi`
+   * Make sure the file is large enough, i.e. about 18 GB.
 
-* <https://techathlon.com/how-to-run-a-vmdk-file-in-oracle-virtualbox/>
-* youtube: <https://www.youtube.com/watch?v=fVYwt1Tluug>
+Generate virtual machine. Again watch the video above first to be prepared, then:
+* Move (or copy) the `vdi` file to the default machine folder you have identified according to the video.
+* Start VirtualBox. 
+* In VirtualBox create a new virtual machine
+* import the VDI- or VMDK-file according to the steps above.
+
+
+
 
 In detail: 
 

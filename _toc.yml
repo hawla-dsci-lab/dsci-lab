@@ -4,6 +4,7 @@
     - file: dsci-im870
       sections:
         - file: dsci-2020-10-02
+        - file: dsci-2020-10-09
     - file: README
     - file: dsci-pytrans
       sections:
@@ -20,9 +21,15 @@
     - file: dsci-projekte
       sections:
         - file: dsci-play-python
+        - file: dsci-projekt-python-sgl.md
+        - file: dsci-projekt-flugschreiber
         - file: dsci-ontologie-visualisierung
+        - file: dsci-scikit-ontology
+        - file: dsci-yaml2mm.md
         - file: dsci-projekt(DE)
     - file: dsci-theory
+      sections:
+        - file: dsci-theory-logistic-regression
     - file: zreferences
 
 

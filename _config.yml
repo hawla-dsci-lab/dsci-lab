@@ -1,7 +1,7 @@
 # Book settings
-title: IM 970 Data Science (EN)
+title: jbusse.de/dsci-lab
 author: Johannes Busse
-logo: logo.png
+# logo: logo.png
 
 latex:
   latex_documents:

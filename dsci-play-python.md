@@ -1,6 +1,6 @@
 # Studienprojekt play Python (dsci-play-python)
 
-Übergreifendes Thema des Studienprojekts: Wie kann man spielerisch Python erlernen? 
+Übergreifendes Thema des Studienprojekts: Wie kann man *spielerisch* Python erlernen? 
 
 * Pflicht, Teilprojekt Game: Analyse existierender Gamification-Plattformen für das Programmierenlernen mit Python, insbesondere <https://www.codewars.com>; Entwurf eines Games für den Gegenstandsbereich Data Science 
 
@@ -12,5 +12,5 @@ Der Unterschied zwischen Pflicht und Kür entspricht dem Unterschied zwischen Ga
 
 * *Spielen*:  selbstgenügsamen, zweckfreies, phantasievolles, bisweilen selbstverlorenes "Herumspielen" mit beliebigen, oft zweckentfremdeten Materialien. EN: to play, playful.
 
-
+Im Ggs. zum Schwesterprojekt {doc}`dsci-projekt-python-sgl` wird in diesem Projekt vorausgesetzt, dass die TN coding-affin sind und Spaß am Programmieren haben. Und natürlich muss Programmieren 1 oder 2 bestanden sein ;-)
 
